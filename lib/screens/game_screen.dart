@@ -1,9 +1,7 @@
 import 'dart:async';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import '../logic/sudoku_logic.dart';
 import '../models/board_size.dart';
 import '../models/difficulty.dart';
