@@ -350,7 +350,7 @@ class _GameScreenState extends State<GameScreen> {
       final v = solution[r!][c!];
       cell.value = v;
       cell.notes.clear();
-      _clearPeerNotes(r!, c!, v);
+      _clearPeerNotes(r, c, v);
       _hintsLeft--;
       selRow = r;
       selCol = c;
@@ -358,8 +358,8 @@ class _GameScreenState extends State<GameScreen> {
       _pushStep(HistoryStep(
         cellMoves: [
           CellMove(
-            row: r!,
-            col: c!,
+            row: r,
+            col: c,
             prevValue: prevValue,
             newValue: v,
             prevNotes: prevNotes,
@@ -525,11 +525,11 @@ class _GameScreenState extends State<GameScreen> {
                               child: GestureDetector(
                                 onTap: _togglePause,
                                 child: Container(
-                                  color: Colors.white.withOpacity(0.9),
+                                  color: Colors.white.withValues(alpha: 0.9),
                                   alignment: Alignment.center,
-                                  child: Column(
+                                  child: const Column(
                                     mainAxisSize: MainAxisSize.min,
-                                    children: const [
+                                    children: [
                                       Icon(Icons.pause_circle_filled,
                                           size: 48, color: AppColors.primary),
                                       SizedBox(height: 8),
