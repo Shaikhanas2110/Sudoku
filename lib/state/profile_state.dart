@@ -26,17 +26,18 @@ class ProfileState extends ChangeNotifier {
   bool darkMode;
 
   ProfileState({
-    this.coins = 188,
-    this.streak = 3,
-    this.bestScore = 37532,
-    this.gamesPlayed = 8,
-    this.gamesWon = 6,
+    this.coins = 0,
+    this.streak = 0,
+    this.bestScore = 0,
+    this.gamesPlayed = 0,
+    this.gamesWon = 0,
     Map<Difficulty, int>? completedByDifficulty,
     this.soundEnabled = true,
     this.vibrationEnabled = true,
     this.highlightSameNumbers = true,
     this.darkMode = false,
-  }) : completedByDifficulty = completedByDifficulty ?? {Difficulty.hard: 0, Difficulty.expert: 0};
+  }) : completedByDifficulty =
+            completedByDifficulty ?? {Difficulty.hard: 0, Difficulty.expert: 0};
 
   /// Win rate shown on the New Game sheet, derived from real play data.
   int get weeklyWinRatePercent {
@@ -90,8 +91,8 @@ class ProfileState extends ChangeNotifier {
   }
 
   void resetProgress() {
-    coins = 188;
-    streak = 3;
+    coins = 100;
+    streak = 0;
     bestScore = 0;
     gamesPlayed = 0;
     gamesWon = 0;

@@ -139,7 +139,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 18),
-              Center(
+              const Center(
                 child: Text(
                   'BEST SCORE',
                   style: TextStyle(
