@@ -1,4 +1,4 @@
-/// Formats an integer with thousands separators, e.g. 18584 -> "18,584".
+
 String formatNumber(int n) {
   final s = n.abs().toString();
   final buffer = StringBuffer();
