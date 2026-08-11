@@ -15,8 +15,8 @@ class ProfileState extends ChangeNotifier {
   int gamesWon;
 
   /// How many times each difficulty has been *won*. Drives the unlock
-  /// requirements shown in the New Game sheet (e.g. "Complete 1 hard games
-  /// to unlock").
+
+
   final Map<Difficulty, int> completedByDifficulty;
 
   // --- Settings -----------------------------------------------------
