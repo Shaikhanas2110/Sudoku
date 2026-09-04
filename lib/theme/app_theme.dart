@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Central place for the colors / theme used across the app so every
-/// screen stays visually consistent with the reference design.
 class AppColors {
   AppColors._();
 
