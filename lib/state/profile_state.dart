@@ -91,7 +91,7 @@ class ProfileState extends ChangeNotifier {
   }
 
   void resetProgress() {
-    coins = 100;
+    coins = 200;
     streak = 0;
     bestScore = 0;
     gamesPlayed = 0;
