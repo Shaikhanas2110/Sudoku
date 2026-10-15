@@ -19,7 +19,7 @@ class ProfileState extends ChangeNotifier {
 
   final Map<Difficulty, int> completedByDifficulty;
 
-  // --- Settings -----------------------------------------------------
+
   bool soundEnabled;
   bool vibrationEnabled;
   bool highlightSameNumbers;
