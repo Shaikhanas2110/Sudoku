@@ -14,7 +14,7 @@ class ProfileState extends ChangeNotifier {
   int gamesPlayed;
   int gamesWon;
 
-  /// How many times each difficulty has been *won*. Drives the unlock
+
 
 
   final Map<Difficulty, int> completedByDifficulty;
