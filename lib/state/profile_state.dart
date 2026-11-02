@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/difficulty.dart';
 
-/// App-wide profile data: currency, streak, best score, per-difficulty
-/// completion counts (used to unlock harder tiers), and user settings.
-/// Everything here is a plain [ChangeNotifier] so the project doesn't need
-/// any extra state-management package. Data lives in memory for the
-/// session (there's no local persistence wired up yet).
 class ProfileState extends ChangeNotifier {
   int coins;
   int streak;
